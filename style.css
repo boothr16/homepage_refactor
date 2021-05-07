@@ -40,7 +40,7 @@ section {
     display: flex;
     flex-direction: column; /* flex direction is row by default */
     align-items: center;
-    margin-top: 5vh; /*5% of viewport height */
+    margin-top: 15vh; /*15% of viewport height */
 }
 
 .my-input-container {
@@ -83,4 +83,25 @@ button:hover {
     cursor: pointer;
     box-shadow: 0 0 10px 0 gainsboro; /* horizontal offset, vertical offset, blur radius, size of shadow, color */
     border-radius: 20px;
+}
+
+footer {
+    background-color: #F2F2F2;
+    position: fixed; /* navbar will stay in same place even if the page is scrolled. */
+    bottom: 0; /* zero space between bottom of page and nav bar */
+    width: 100vw; /* width is 100% of (equal to) width of viewport */
+}
+
+#footer-left { /* # operator defines an ID */
+    display: flex;
+    justify-self: start; /* beginning of flex box */
+    padding-left: 20px;
+    align-items: center;
+}
+
+#footer-right { /* # operator defines an ID */
+    display: flex;
+    justify-content: flex-end; /* flex to rightmost of container */
+    margin-right: 20px;
+    align-items: center;
 }
