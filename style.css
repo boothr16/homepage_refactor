@@ -1,0 +1,37 @@
+body {
+    margin: 0; /*set margins to zero (8 px by default) */
+    font-family: arial, sans-serif; /* use arial font in the body, and sans-serif if arial is not available */
+    font-size: 0.9em; /* 90% of default font size */
+}
+
+a {
+    margin: 5px; /*anchor tags have margins of 5 px all around*/
+    text-decoration: none; /*no text decoration by default*/
+    color: black; /*black text by default*/
+}
+
+a:hover { /*effects when an anchor is hovered over */
+    text-decoration: underline;
+}
+
+nav {
+    display: flex; /*expands items to fill available free space or shrinks them to prevent overflow*/
+    justify-content: space-between; /*space-between items are evenly distributed in the container*/
+}
+
+.header-nav { /* dot operator (.) defines a class */
+    display: flex; /*items in the flex box become flex items */
+    align-items: center; /* center in y-direction*/
+    padding-left: 20px; /* was 40 px by default */
+    margin-right: 10px;
+}
+
+ul > a, ul > img { /* > operator is used to select an element with a specific parent. example: ul > a selects all anchor tags within a ul tag. */
+    padding: 0 8px; /* no padding on top and bottom, left and right padding = 8 px */
+}
+
+.header-img:hover { /* dot operator (.) defines a class */
+    box-shadow: 0 0 10px 0 gainsboro; /* horizontal offset, vertical offset, blur radius, size of shadow, color */
+    border-radius: 20px;
+    cursor: pointer;
+}
