@@ -35,3 +35,52 @@ ul > a, ul > img { /* > operator is used to select an element with a specific pa
     border-radius: 20px;
     cursor: pointer;
 }
+
+section {
+    display: flex;
+    flex-direction: column; /* flex direction is row by default */
+    align-items: center;
+    margin-top: 5vh; /*5% of viewport height */
+}
+
+.my-input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 38px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+}
+
+.my-input-container:hover {
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+.my-input-container > input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+.my-input-container > img:hover {
+    cursor: pointer;
+}
+
+.my-button-container {
+    padding-top: 53px;
+}
+
+button {
+    background-color: #F8F9Fa;
+    border-radius: 5px;
+    border: none;
+    height: 36px;
+    padding: 0 20px; /* 20 px padding on left and right */
+    margin: 0 4px; /* 4 px margin on left and right */
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 gainsboro; /* horizontal offset, vertical offset, blur radius, size of shadow, color */
+    border-radius: 20px;
+}
