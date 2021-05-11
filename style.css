@@ -111,3 +111,35 @@ footer {
     margin-right: 20px;
     align-items: center;
 }
+
+@media (max-width: 630px) { /* apply these if screen width is less than 630px */
+    #footer-nav {
+        flex-direction: column;
+    }
+
+    #footer-left {
+        justify-content: center;
+    }
+
+    #footer-right {
+        justify-content: center;
+    }
+
+    .my-input-container { /* search bar and buttons no longer get cut off when screen width is compressed */
+        width: 95vw;
+    }
+}
+
+@media (max-height: 522px) { /* apply these if screen height is less than 522px */
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
