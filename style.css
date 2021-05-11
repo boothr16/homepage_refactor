@@ -62,6 +62,12 @@ section {
     outline: none;
 }
 
+.my-input-container > img {
+    padding: 5px 10px; /*5 px top,bottom and 10 px left,right*/
+    max-width: 80%;
+    max-height: 80%;
+}
+
 .my-input-container > img:hover {
     cursor: pointer;
 }
