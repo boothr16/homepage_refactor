@@ -143,3 +143,17 @@ footer {
         position: relative;
     }
 }
+
+@media (max-height: 570px) and (max-width: 630px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        margin-bottom: 13px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
